@@ -74,6 +74,7 @@
     background-image: url(https://t3.ftcdn.net/jpg/04/02/14/88/360_F_402148864_p78YNfhSh7z3DWfYSfjgtqWod3CvsuKX.jpg);
     background-size: cover;
     color: white;
+    font-family: "Noto Sans", serif;
 }
 .about-head{
     text-align: center;
@@ -133,7 +134,7 @@
     background-size: cover;
     margin-top: 10px;
     padding-top: 10px;
-    
+    font-family: "Noto Sans", serif;
 }
 .project1{
     border: solid 2px;
@@ -163,7 +164,6 @@
 }
 .skills{
     display: flex;
-    flex-direction: column;
 }
 .skill-list{
     width: 15%;
