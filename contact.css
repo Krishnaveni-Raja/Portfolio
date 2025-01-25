@@ -67,3 +67,32 @@ fieldset{
     padding: 20px;
     background-color: white;
 }
+
+@media only screen and (max-width: 480px) {
+    .form-container {
+        padding: 5px;
+        margin-top: 20px;
+    }
+    fieldset {
+        width: 90%; 
+        padding: 10px;
+    }
+    .form input, .form textarea, .submit {
+        width: 85%; 
+    }
+    .submit {
+        font-size: large; 
+    }
+    .form input, .form textarea {
+        padding: 12px; /
+    }
+    .form label {
+        font-size: 14px; 
+        margin: 15px 0 5px 10px; 
+    }
+    
+    .form-container h1 {
+        font-size: 24px; 
+        margin: 10px;
+    }
+}
