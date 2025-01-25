@@ -16,16 +16,28 @@
 </head>
 
 <body>
-    <section class="home-page">
+    <section id="home" class="home-page">
         <div class="navbar">
             <h1 class="nav-head">My Portfolio</h1>
             <div class="nav-list">
-                <a href="home.html">Home</a>
-                <a href="#">About</a>
-                <a href="#">Projects</a>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
                 <a href="contact.html">Contact</a>
             </div>
         </div>
+        <div class="side-navbar-icon" onclick="sideNavBar()"><i class="fas fa-bars"></i></div>
+    </nav>
+    <div class="side-nav-options"> 
+        <ul class="nav-list">
+            <p class="xmark" onclick="cancelSideNav()"><i class="fas fa-xmark"></i></p>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
         <div class="intro">
             <img src="Portfolio image1.jpg" alt="Profile image">
             <div>
@@ -41,12 +53,11 @@
                         non-IT background to pursue my passion for web development.
                     </p>
                 </div>
-                <button class="btn">Learn more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+                <button class="btn"><a href="#about">Learn more</a> <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
             </div>
         </div>
     </section>
-
-    <section class="about-me">
+    <section id="about" class="about-me">
         <h1 class="about-head">About Me</h1>
         <h1 class="title">EDUCATION & WORK <i class="fa fa-graduation-cap" aria-hidden="true"></i></h1>
         <div class="work">
@@ -90,23 +101,23 @@
         </div>
         <h1 class="skill-head">PROFESSIONAL SKILLS <i class="fa fa-code" aria-hidden="true"></i></h1>
         <div class="skills">
-            <div class="skill-list">
+            <div id="html" class="skill-list">
                 <p>HTML</p>
             </div>
-            <div class="skill-list">
+            <div id="css" class="skill-list">
                 <p>CSS</p>
             </div>
-            <div class="skill-list">
-                <p>JavaScript</p>
+            <div id="js" class="skill-list">
+                <p><img href=""> JavaScript</p>
             </div>
-            <div class="skill-list">
-                <p>GIT</p>
+            <div id="git"class="skill-list">
+                <p><img href="">GIT</p>
             </div>
-            <div class="skill-list">
-                <p>Python Basics</p>
+            <div id="py"class="skill-list">
+                <p><img href="">Python Basics</p>
             </div>
-            <div class="skill-list">
-                <p>React Basics</p>
+            <div id="react"class="skill-list">
+                <p><img href="">React Basics</p>
             </div>
         </div>
         <h1 class="cert-head">CERTIFICATES <i class="fa fa-certificate" aria-hidden="true"></i></h1>
@@ -131,7 +142,7 @@
         </div>
     </section>
 
-    <Section class="projects">
+    <Section id="projects" class="projects">
         <h1 class="projects-head">PROJECTS</h1>
         <div class="project-list">
         <div class="project1">
@@ -157,6 +168,8 @@
         </div>
     </div>
     </Section>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
