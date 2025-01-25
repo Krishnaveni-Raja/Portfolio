@@ -304,7 +304,7 @@
 }
 
 /* Media Query for Mobile Devices */
-@media (max-width: 480px) {
+@media (max-width: 500px) {
 
     .navbar {
         display: none;
