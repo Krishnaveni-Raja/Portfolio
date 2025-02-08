@@ -11,8 +11,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link rel="icon" href="https://www.freeiconspng.com/uploads/am-a-19-year-old-multimedia-artist-student-from-manila--21.png">
+
     <title>Portfolio</title>
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="contact.css">
 </head>
 
 <body>
@@ -23,7 +28,7 @@
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
-                <a href="contact.html">Contact</a>
+                <a href="#contact">Contact</a>
             </div>
         </div>
         <div class="side-navbar-icon" onclick="sideNavBar()"><i class="fas fa-bars"></i></div>
@@ -53,7 +58,7 @@
                         non-IT background to pursue my passion for web development.
                     </p>
                 </div>
-                <button class="btn"><a href="#about">Learn more</a> <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+                <button class="btn"><a href="https://www.canva.com/design/DAGcL3A7bDk/443WP2Toce8sF0KfywvvBw/view?utm_content=DAGcL3A7bDk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=heb44bfae12" target="_blank" rel="noopener no-referrer">View Resume</a> <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
             </div>
         </div>
     </section>
@@ -61,7 +66,7 @@
         <h1 class="about-head">About Me</h1>
         <h1 class="title">EDUCATION & WORK <i class="fa fa-graduation-cap" aria-hidden="true"></i></h1>
         <div class="work">
-            <div id="work3" class="exp">
+            <div id="work3" class="exp" data-aos="fade-right">
                 <h2>Frontend Developer Intern</h2>
                 <h4>Unified Mentors</h4>
                 <p>Currently doing a 1-month internship as a Front-End Developer, working on 4 diverse projects. Gaining
@@ -69,14 +74,14 @@
                     efficient code using HTML, CSS, and JavaScript.</p>
                 <p>January 2025 - Present</p>
             </div>
-            <div id="work2" class="exp">
+            <div id="work2" class="exp" data-aos="fade-left" data-aos-delay="200">
                 <h2>Software Tester Intern</h2>
                 <h4>Wyreflow Technologies</h4>
                 <p>Completed a 1-month internship as a Software Tester, focusing on testing the functionality and user
                     interface (UI) of a mobile application.</p>
                 <p>October 2024 - November 2024</p>
             </div>
-            <div id="work1" class="exp">
+            <div id="work1" class="exp" data-aos="fade-right" data-aos-delay="400">
                 <h2>Process Associate</h2>
                 <h4>HTC Global Services</h4>
                 <p>Worked as a Technical Support Analyst for 1 year, specializing in international voice processes, and
@@ -86,13 +91,13 @@
         </div>
 
         <div class="education">
-            <div id="edu2" class="edu">
+            <div id="edu2" class="edu" data-aos="fade-left" data-aos-delay="600">
                 <h2>Under Graduate</h2>
                 <p>Swami Dayananda Arts & Science College</p>
                 <p>Pursued a Bachelor of Commerce degree with a specialization in Computer Applications.</p>
                 <p>2020-2023 - 86.83%</p>
             </div>
-            <div id="edu1" class="edu">
+            <div id="edu1" class="edu" data-aos="fade-right" data-aos-delay="800">
                 <h2>Higher secondary</h2>
                 <p>Swami Dayananda Matric Hr.Sec School</p>
                 <p>Studied Commerce, Economics, and Business Mathematics as key subjects, building a comprehensive understanding of business and analytical concepts.</p>
@@ -108,68 +113,95 @@
                 <p>CSS</p>
             </div>
             <div id="js" class="skill-list">
-                <p><img href=""> JavaScript</p>
+                <p> JavaScript</p>
             </div>
             <div id="git"class="skill-list">
-                <p><img href="">GIT</p>
+                <p>GIT</p>
             </div>
             <div id="py"class="skill-list">
-                <p><img href="">Python Basics</p>
+                <p>Python Basics</p>
             </div>
             <div id="react"class="skill-list">
-                <p><img href="">React Basics</p>
+                <p>React Basics</p>
             </div>
         </div>
         <h1 class="cert-head">CERTIFICATES <i class="fa fa-certificate" aria-hidden="true"></i></h1>
         <div class="certificate">
-            <div class="cert1">
-                <a href="https://drive.google.com/file/d/1_KXxdwJKqpnlFgIoHN4YMp2fl1WECgM8/view"><img src="HTML Certificate.png" alt="Introduction to HTML, CSS and JavaScript"></a>
+            <div class="cert1" class="inside-out-item" data-aos="zoom-in" data-aos-delay="1000">
+                <a href="https://drive.google.com/file/d/1_KXxdwJKqpnlFgIoHN4YMp2fl1WECgM8/view" target="_blank" rel="noopener no-referrer"><img src="HTML Certificate.png" alt="Introduction to HTML, CSS and JavaScript"></a>
                 <h3>Introduction to HTML, CSS and JavaScript</h3>
                 <P>I have completed a course in HTML, CSS, and JavaScript, helped me gain a strong
                     understanding of various tags, concepts, and skills</P>
             </div>
-            <div class="cert1">
-                <a href="https://drive.google.com/file/d/1NRJC29ffu8IHfGgxmqvI9RDBvZ4w778U/view"><img src="GIT Certificate.png" alt="Getting Started with GIT and GITHUB"></a>
+            <div class="cert1" class="inside-out-item" data-aos="zoom-in" data-aos-delay="1200">
+                <a href="https://drive.google.com/file/d/1NRJC29ffu8IHfGgxmqvI9RDBvZ4w778U/view" target="_blank" rel="noopener no-referrer"><img src="GIT Certificate.png" alt="Getting Started with GIT and GITHUB"></a>
                 <h3>Getting Started with GIT and GITHUB</h3>
                 <P>Completed a comprehensive course on Git and GitHub, gaining proficiency in various
                     Git commands and version control practices.</P>
             </div>
-            <div class="cert1">
-                <a href="https://drive.google.com/file/d/1VzAdDhdYf4lytFw0QxW4WjchT2VZU_ix/view"><img src="React cetificate.png" alt="Developing Front-End Apps with React"></a>
+            <div class="cert1" class="inside-out-item" data-aos="zoom-in" data-aos-delay="1400">
+                <a href="https://drive.google.com/file/d/1VzAdDhdYf4lytFw0QxW4WjchT2VZU_ix/view" target="_blank" rel="noopener no-referrer"><img src="React cetificate.png" alt="Developing Front-End Apps with React"></a>
                 <h3>Developing Front-End Apps with React</h3>
                 <P>Developed a front-end application using the React library, gaining hands-on experience with various React components and their implementation.</P>
             </div>
         </div>
     </section>
-
     <Section id="projects" class="projects">
         <h1 class="projects-head">PROJECTS</h1>
         <div class="project-list">
-        <div class="project1">
+        <div class="project1" class="inside-out-item" data-aos="zoom-in" data-aos-delay="1600">
             <img src="E-Commerce website image.png" alt="E-Commerce Project">
-            <h1><a href="https://krish03.neocities.org/E-Commerce%20Website/signup">E-Commerce Project</h1></a>
+            <h1><a href="https://krish03.neocities.org/E-Commerce%20Website/signup" target="_blank" rel="noopener no-referrer">E-Commerce Project</h1></a>
             <p>Designed and developed a responsive E-Commerce website accessible on both laptops and
                 mobile devices, featuring multiple pages, including a login page.</p>
         </div>
-        <div class="project1">
+        <div class="project1" class="inside-out-item" data-aos="zoom-in" data-aos-delay="1800">
             <img src="Wishlist website image.png" alt="Wishlist Project">
-            <h1><a href="https://krish03.neocities.org/Wishlist%20project/">Wishlist Project</h1></a>
+            <h1><a href="https://krish03.neocities.org/Wishlist%20project/" target="_blank" rel="noopener no-referrer">Wishlist Project</h1></a>
             <p>Developed a Wishlist project with functionality to add and delete items, allowing users to manage their Wishlist or To-Do list effectively.</p>
         </div>
-        <div class="project1">
+        <div class="project1" class="inside-out-item" data-aos="zoom-in" data-aos-delay="2000">
             <img src="Login page image.png" alt="Login page">
-            <h1><a href="https://krish03.neocities.org/Login%20page/">Login Page</h1></a>
+            <h1><a href="https://krish03.neocities.org/Login%20page/" target="_blank" rel="noopener no-referrer">Login Page</h1></a>
             <p>Designed a sample login page featuring 'Forgot Password' and 'Sign In' options, ensuring a user-friendly layout with functional navigation.</p>
         </div>
-        <div class="project1">
+        <div class="project1" class="inside-out-item" data-aos="zoom-in" data-aos-delay="2200">
             <img src="Sample webpage image.png" alt="First Sample Webpage">
-            <h1><a href="https://krish03.neocities.org/First_website/">First Sample Webpage</h1></a>
+            <h1><a href="https://krish03.neocities.org/First_website/" target="_blank" rel="noopener no-referrer">First Sample Webpage</h1></a>
             <p>This is my first practice webpage, where I gained experience in designing a navigation bar and showcasing product displays.</p>
         </div>
     </div>
     </Section>
+    <section id="contact">
+        <div class="form-container">
+            <form class="form" action="https://formsubmit.co/krishnaveniraja03@gmail.com" method="post">
+                
+                <fieldset>
+                    <h1>Contact Me</h1>
+                <label>Name:<span style="color: red;">*</span></label>
+                <input type="text" placeholder="Enter your name" required>
+                <label>Email: <span style="color: red;">*</span></label>
+                <input type="email" placeholder="example@gmail.com" required>
+                <label for="number">Contact number: <span style="color: red;">*</span></label>
+                <input type="tel" placeholder="Enter your number" required>
+                <label>Message: <span style="color: red;">*</span></label>
+                <textarea type="text" placeholder="Enter your message here..." required></textarea>
+                <button class="submit" type="submit">Submit</button>
+            </fieldset>
+            </form>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="footer-container">
+            <p>© 2025 Krishnaveni Raja. All Rights Reserved.</p>
+            <div class="social-icons">
+                <a href="https://github.com/Krishnaveni-Raja" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/krishnaveni-raja" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:krishnaveniraja03@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
 
     <script src="script.js"></script>
 </body>
-
 </html>
